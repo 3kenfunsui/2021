@@ -16,6 +16,10 @@
 					font-size: 90%;
 				}
 
+				.site-header {
+					height: 60px;
+				}
+
 				.top-img-pc {
 					display: none;
 				}
@@ -75,6 +79,10 @@
 					display: none;
 				}
 
+				.site-header {
+					height: 75px;
+				}
+
 				.info {
 					font-size: 130%;
 				}
@@ -124,12 +132,11 @@
 				color: #ffffff;
 			}
 			.site-header {
-				z-index: 10000;
+				z-index: 2000000;
 				position: fixed;
 				top: 0px;
 				left: 0px;
 				width: 100%;
-				height: 80px;
 				background-color: #3584bb }
 				.site-header__wrapper {
 					padding-top: 1rem;
@@ -176,7 +183,8 @@
 
 			.menu-btn {
 				position: fixed;
-				top: 10px;
+				margin-top: 0px;
+				top: 0px;
 				right: 10px;
 				display: flex;
 				height: 60px;
@@ -270,29 +278,27 @@
 				color: #ffffff;
 			}
 
-			.top-img-pc, .top-img-phone {
-				margin-top: 80px;
+			.top-img-pc {
+				margin-top: 75px;
 				margin-left: 0px;
 				margin-right: 0px;
 			}
 
-			.info {
-				padding: 8px 19px;
-				margin: 2em 0;
-				color: #2c2c2f;
-				background: #cde4ff;
-				border-top: solid 5px #5989cf;
-				border-bottom: solid 5px #5989cf;
+			.top-img-phone {
+				z-index: 10000;
+				margin-top: 60px;
+				margin-left: 0px;
+				margin-right: 0px;
 			}
-			.info ul {
-				margin: 0; 
-				padding-top: 10px;	
-				padding-bottom: 10px;
-				padding-left: 4px;
-				padding-right: 4px;
-			}
+
 			ul {
 				list-style-type: none;
+			}
+
+			.center {
+				margin-top: 40px;
+				margin-bottom: 40px;
+				text-align: center;
 			}
 
 			.open-div {
@@ -334,7 +340,7 @@
 				max-width: 380px;
 				height: 240px;
 				color: #00BCD4;
-				background: #e4fcff;/*背景色*/
+				background: rgba(0, 0, 0, 0);/*背景色*/
 				border-radius: 6px;
 				display: flex;
 				justify-content: center;
@@ -343,7 +349,7 @@
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
-				border-top: solid 6px #1dc1d6;
+				border-top: solid 6px rgba(0, 0, 0, 0);
 				box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影*/
 			}
 			.text {
@@ -352,10 +358,12 @@
 			}
 			.close {
 				cursor:pointer;
+				z-index: 100000000;
 				position: absolute;
-				top: 4px;
-				right: 4px;
-				font-size: 20px;
+				color: #ffffff;
+				top: 0px;
+				right: 10px;
+				font-size: 40px;
 			}
 
 			.btn_sound {
@@ -430,7 +438,8 @@
 				line-height: 1.5;
 				position: relative;
 				display: inline-block;
-				margin-bottom: 1.5rem;
+				margin-top: 2rem;
+				margin-bottom: 2rem;
 				cursor: pointer;
 				-webkit-user-select: none;
 				-moz-user-select: none;
@@ -564,13 +573,9 @@
 				3研戦隊フンスイジャー！<br class="br-sp">噴水の正義を守るため、<br class="br-sp">彼らが巨悪バクテーリア軍に立ち向かう！<br>
 				負けるな！フンスイジャー！<br class="br-sp">戦え！フンスイジャー！<br>
 				フンスイジャーの明日はどっちだ！？<br></p>
-	
-				<div class="info">
-					<ul align="center">
-						<li>開催日時：2021.11.6 Sat.</li>
-						<li>時間：18:30〜</li>
-						<li>場所：YouTubeライブ</li>
-					</ul>
+				
+				<div class="center">
+					<img src="static/imgs/date.png" width="80%"></img>
 				</div>
 	
 				<p class="btn_sound" align="center" onclick="play_water_sound()">水の音</p>
@@ -606,7 +611,7 @@
 					<div class="overlay">
 						<div class="window">
 							<label class="close" for="pop-up">×</label>
-							<p class="text">応援してくれてありがとう！</p>
+							<img src="static/imgs/thanks.jpg" width="100%"></img>
 						</div>
 					</div>
 				</div>
