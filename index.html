@@ -522,6 +522,7 @@
 			}
 
 			.white {
+				margin-top: 40px;
 				color: #ffffff;
 			}
 		</style>
@@ -586,6 +587,10 @@
 
 				<p align="center" class="white">↓↓↓配信はこちら↓↓↓</p>
 
+				<div class="YouTube-div" style="text-align:center;"><iframe class="YouTube" width="640" height="360" src="https://www.youtube.com/embed/udjuAOqTLNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+				<p align="center"><a href="https://twitter.com/intent/tweet?button_hashtag=フンスイジャー&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false" data-size="large">Tweet #フンスイジャー</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
 				<audio id="sound" preload="auto">
 						<source src="static/music/potion.mp3">
 				</audio>
@@ -599,21 +604,21 @@
 					var num = 33333332;
 					window.onload = function() {
 						num = 3333332;
-						document.getElementById("display_num").innerHTML = num.toString() + "パワーが溜まったよ⛲️";
+						document.getElementById("display_num").innerHTML = "＼" + num.toString() + "パワーが溜まったよ⛲️／";
 					}
 					var cheer_func = function() {
 						num += 1/2;
 						if (num % 1 != 0) {
-							document.getElementById("display_num").innerHTML = (num - 1/2).toString() + "パワーが溜まったよ⛲️";
+							document.getElementById("display_num").innerHTML = "＼" + (num - 1/2).toString() + "パワーが溜まったよ⛲️／";
 						} else {
-							document.getElementById("display_num").innerHTML = num.toString() + "パワーが溜まったよ⛲️";
+							document.getElementById("display_num").innerHTML = "＼" + num.toString() + "パワーが溜まったよ⛲️／";
 						}
 					}
 				</script>
 	
 				<div class="open-div">
-					<label class="open" for="pop-up">フンスイジャーを応援する</label><br><br>
 					<div id="display_num"></div>
+					<label class="open" for="pop-up"><img src="static/imgs/cheer.png" width="80%"></img></label><br><br>
 					<input type="checkbox" id="pop-up" oninput="cheer_func()">
 					<div class="overlay">
 						<div class="window">
@@ -622,9 +627,6 @@
 						</div>
 					</div>
 				</div>
-	
-				<div class="YouTube-div" style="text-align:center;"><iframe class="YouTube" width="640" height="360" src="https://www.youtube.com/embed/udjuAOqTLNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-				<p align="center"><a href="https://twitter.com/intent/tweet?button_hashtag=フンスイジャー&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false" data-size="large">Tweet #フンスイジャー</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
 
 				<div align="center">
 					<a href="https://forms.gle/uAkRUqKboqUnszKe7" target=”_blank” align="center" class="btn btn-border-shadow btn-border-shadow--color2">ご感想はこちら</a>
